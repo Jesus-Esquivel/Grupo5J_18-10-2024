@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'estilo.css'%}">
+    <title>Cuchau Cuchau</title>
+</head>
+<body>
+    <h1>Cuchau Cuchau</h1>
+    <h2>Jesus Adrian</h2>
+    <Hr>
+        {% for i in misalumnos %}
+        <li>{{i.nombre}}</li>
+        {% endfor %}
+    </Hr>
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
